@@ -34,6 +34,7 @@
                                     <option value="1">管理者 (閲覧+編集)</option>
                                     <option value="2">編集者 (編集)</option>
                                     <option value="3">閲覧者 (閲覧)</option>
+                                    <option value="4">ゲスト (-)</option>
                                 </select>
                             </div>
                         </div>
