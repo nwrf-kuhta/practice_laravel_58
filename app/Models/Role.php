@@ -17,4 +17,14 @@ class Role extends Model
     protected $fillable = [
         'name', 'is_viewable', 'is_editable',
     ];
+
+    /**
+     * usersとのリレーション (1対多)
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function user()
+    {
+        return $this->hasMany('App\Models\User', 'role_id');
+    }
 }
