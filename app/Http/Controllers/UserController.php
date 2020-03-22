@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Entities\User;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -41,7 +41,7 @@ class UserController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Entities\User  $entitiesUser
+     * @param  \App\Models\User  $entitiesUser
      * @return \Illuminate\Http\Response
      */
     public function show(User $entitiesUser)
@@ -52,7 +52,7 @@ class UserController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Entities\User  $entitiesUser
+     * @param  \App\Models\User  $entitiesUser
      * @return \Illuminate\Http\Response
      */
     public function edit(User $entitiesUser)
@@ -64,7 +64,7 @@ class UserController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Entities\User  $entitiesUser
+     * @param  \App\Models\User  $entitiesUser
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, User $entitiesUser)
@@ -75,7 +75,7 @@ class UserController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Entities\User  $entitiesUser
+     * @param  \App\Models\User  $entitiesUser
      * @return \Illuminate\Http\Response
      */
     public function destroy(User $entitiesUser)
