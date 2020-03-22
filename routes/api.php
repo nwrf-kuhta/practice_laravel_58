@@ -14,6 +14,6 @@ use Illuminate\Http\Request;
 */
 
 // 疎通確認API
-Route::middleware('auth:api')->group(function () {
+Route::middleware(['auth:api', 'can.access:either'])->group(function () {
     Route::get('/hoge', 'Api\HogeController@hoge')->name('hoge');
 });
