@@ -22,4 +22,17 @@ class UserRepository
     {
         return User::where('id', $id)->first();
     }
+
+    /**
+     * 指定したIDのユーザとrole_idに紐づくロール情報を取得
+     *
+     * @param string $id
+     * @return User|null
+     */
+    public function findWithRole(string $id): ?User
+    {
+        return User::with(['role'])
+            ->where('id', $id)
+            ->first();
+    }
 }
