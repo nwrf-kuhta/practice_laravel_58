@@ -15,10 +15,10 @@ class UserRepository
     /**
      * 指定したIDのユーザを取得
      *
-     * @param string $id
+     * @param int $id
      * @return User|null
      */
-    public function find(string $id): ?User
+    public function find(int $id): ?User
     {
         return User::where('id', $id)->first();
     }
@@ -26,10 +26,10 @@ class UserRepository
     /**
      * 指定したIDのユーザとrole_idに紐づくロール情報を取得
      *
-     * @param string $id
+     * @param int $id
      * @return User|null
      */
-    public function findWithRole(string $id): ?User
+    public function findWithRole(int $id): ?User
     {
         return User::with(['role'])
             ->where('id', $id)
