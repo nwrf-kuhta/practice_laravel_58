@@ -6,6 +6,7 @@ use App\Models\User;
 
 /**
  * usersに対してのデータ永続化に関するクラス
+ * @TODO 本当はInterfaceを作ってimplementsするのが正しいけど一旦保留
  *
  * Class UserRepository
  * @package App\Repositories
